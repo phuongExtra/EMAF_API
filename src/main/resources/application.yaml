@@ -1,0 +1,60 @@
+## Project information
+info:
+  project:
+    name: emaf-service
+
+## Server
+server:
+  error:
+    whitelabel:
+      enabled: false
+    path: /page-not-found
+  compression:
+    enabled: true
+  servlet:
+    session:
+      cookie:
+        http-only: true
+  port: 8082
+
+
+## Spring
+spring:
+  application:
+    name: emaf-service
+  profiles:
+    active: local
+
+# Stream
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+# JPA
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: false
+        hibernate-dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        naming:
+          physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+          implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: fstart.noreply@gmail.com
+    password: fstartP@ss0rd
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+
+## My Batis
+# Comment out this configuration to disable the display of SQL queries on the console
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

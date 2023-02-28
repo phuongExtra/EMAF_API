@@ -1,0 +1,691 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>All Event | EMAF</title>
+
+    <link rel="shortcut icon" th:href="@{assets/img/favicon.png}">
+
+    <link rel="stylesheet" th:href="@{assets/themes/animate.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/fontawesome.min.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/icofont.min.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/slick.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/meanmenu.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/magnific-popup.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/style.css}">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
+    <div class="preloader" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <div id="main-header" class="header-area">
+            <!-- Insert topbar here -->
+            <div th:replace="fragment/header :: header"></div>
+        </div>
+    </header>
+
+    <div class="breadcrumb-area" style="background-image: url('/assets/img/page-title.jpeg');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <nav aria-label="breadcrumb">
+                    <h2 class="page-title">All Schedule</h2>
+                    <ol class="breadcrumb text-center">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">All Schedule</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ev_schedule padding-top-110 padding-bottom-120">
+        <div class="ev-shapes">
+            <img th:src="@{assets/img/index/e_vec5.png}" alt="" class="vec_1">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center margin-bottom-20 wow fadeInUp"
+                style="visibility: visible; animation-name: fadeInUp;">
+                <div class="col-lg-6">
+                    <div class="common-title text-center">
+                        <h5>schedule</h5>
+                        <h2>events <span>schedule</span></h2>
+                        <p class="margin-top-20">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sc_tab_nav margin-bottom-30">
+                <div class="col-lg-8 mx-auto wow fadeInUp" data-wow-delay=".2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <div class="line">
+                        <img th:src="@{assets/img/index/line.png}" alt="">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                        <span class="four"></span>
+                        <span class="five"></span>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="nav sc_nav_wrapper justify-content-center" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link wow zoomIn active" data-wow-delay=".2s" id="nav-one-tab"
+                            data-bs-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
+                            <div class="single-nav">
+                                <h4>Days 1</h4>
+                                <p>July 21-2021</p>
+                            </div>
+                        </a>
+                        <a class="nav-item nav-link wow zoomIn" data-wow-delay=".4s" id="nav-two-tab"
+                            data-bs-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two"
+                            aria-selected="false"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+                            <div class="single-nav">
+                                <h4>Days 2</h4>
+                                <p>July 22-2021</p>
+                            </div>
+                        </a>
+                        <a class="nav-item nav-link wow zoomIn" data-wow-delay=".6s" id="nav-three-tab"
+                            data-bs-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three"
+                            aria-selected="false"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                            <div class="single-nav">
+                                <h4>Days 3</h4>
+                                <p>July 23-2021</p>
+                            </div>
+                        </a>
+                        <a class="nav-item nav-link wow zoomIn" data-wow-delay=".8s" id="nav-four-tab"
+                            data-bs-toggle="tab" href="#nav-four" role="tab" aria-controls="nav-four"
+                            aria-selected="false"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: zoomIn;">
+                            <div class="single-nav">
+                                <h4>Days 4</h4>
+                                <p>July 24-2021</p>
+                            </div>
+                        </a>
+                        <a class="nav-item nav-link wow zoomIn" data-wow-delay=".10s" id="nav-five-tab"
+                            data-bs-toggle="tab" href="#nav-five" role="tab" aria-controls="nav-five"
+                            aria-selected="false"
+                            style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                            <div class="single-nav">
+                                <h4>Days 5</h4>
+                                <p>July 25-2021</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/1.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!--  <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/2.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!--  <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/3.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!--  <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/4.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!--  <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/1.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/2.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/3.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/4.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/1.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/2.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/3.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/4.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/1.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/2.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/3.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/4.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab">
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/1.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/2.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/3.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row sc_tab_cont no-gutters align-items-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="sp_img">
+                                <img th:src="@{assets/img/index/4.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="sp_cont">
+                                <div class="meta-box">
+                                    <span><i class="icofont-ui-calendar"></i> July-21-2021</span>
+                                    <span><i class="icofont-clock-time"></i> 08.00 AM - 11.00 PM</span>
+                                    <!-- <a href="https://themes.themewild.com/eventex/ticket.html"><i class="icofont-ui-note"></i> buy ticket</a> -->
+                                </div>
+                                <h5>Patricia Dominy</h5>
+                                <h4><a href="/single">Business World Event
+                                        Introduction</a></h4>
+                                <p class="margin-top-20">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragment/subscribe :: subscribe"></div>
+    <footer th:replace="fragment/footer :: footer"></footer>
+
+
+    <div class="scrollup" style="display: none;"><i class="fas fa-level-up"></i></div>
+
+    <script th:src="@{assets/themes/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{assets/themes/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/themes/slick.min.js}"></script>
+    <script th:src="@{assets/themes/counterup.min.js}"></script>
+    <script th:src="@{assets/themes/jquery.meanmenu.min.js}"></script>
+    <script th:src="@{assets/themes/jquery.magnific-popup.min.js}"></script>
+    <script th:src="@{assets/themes/waypoints.min.js}"></script>
+    <script th:src="@{assets/themes/easing.min.js}"></script>
+    <script th:src="@{assets/themes/isotope.pkgd.min.js}"></script>
+    <script th:src="@{assets/themes/countdown.js}"></script>
+    <script th:src="@{assets/themes/wow.min.js}"></script>
+    <script th:src="@{assets/themes/main.js}"></script>
+
+</body>
+
+</html>

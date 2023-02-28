@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ROLE_STAFF",
+    "name": "Staff"
+  },
+  {
+    "id": "ROLE_ADMIN",
+    "name": "Admin"
+  }
+,
+  {
+    "id": "ROLE_STUDENT",
+    "name": "Student"
+  }
+,
+  {
+    "id": "ROLE_MANAGER",
+    "name": "Manager"
+  }
+,
+  {
+    "id": "ROLE_ORGANIZER",
+    "name": "Organizer"
+  },
+  {
+    "id": "ROLE_COLLABORATOR",
+    "name": "Collaborator"
+  }
+]

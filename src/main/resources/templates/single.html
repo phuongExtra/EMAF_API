@@ -1,0 +1,239 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Event Information | EMAF</title>
+
+    <link rel="shortcut icon" th:href="@{assets/img/favicon.png}">
+
+    <link rel="stylesheet" th:href="@{assets/themes/animate.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/fontawesome.min.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/icofont.min.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/slick.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/meanmenu.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/magnific-popup.css}">
+    <link rel="stylesheet" th:href="@{assets/themes/style.css}">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
+    <div class="preloader" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <div id="main-header" class="header-area">
+            <!-- Insert topbar here -->
+            <div th:replace="fragment/header :: header"></div>
+        </div>
+    </header>
+
+    <div class="breadcrumb-area" style="background-image: url('/assets/img/page-title.jpeg');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <nav aria-label="breadcrumb">
+                    <h2 class="page-title">Event Information</h2>
+                    <ol class="breadcrumb text-center">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Event information</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-schedule-wrapper padding-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-12">
+                    <div class="single-schedule-left">
+
+                        <div class="ss-img-box wow fadeInUp">
+                            <img th:src="@{assets/img/single/1.jpg}" alt="">
+                        </div>
+
+                        <div class="counter-area counter-area2 padding-bottom-60">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <div class="row counter_wrapper countdown">
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="days">18</h2>
+                                                    <h6>days</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="hours">10</h2>
+                                                    <h6>hours</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="minutes">48</h2>
+                                                    <h6>minute</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="seconds">30</h2>
+                                                    <h6>second</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ss-content-box padding-bottom-60 wow fadeInUp">
+                            <h2 class="margin-bottom-30">Business World Event Introduction</h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                                Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                            </p>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+                            </p>
+                            <a href="#" class="btn1 margin-top-30">Register now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="single-schedule-right">
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
+
+                            <div class="single-sidebar bg-banner">
+                                <h4>meet speakers</h4>
+                                <p class="margin-top-20">There are many variations of passages of orem psum available
+                                    but
+                                    the majority have suffered alteration in some form.</p>
+                                <a href="#" class="btn1 margin-top-10">show speaker</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
+
+                            <div class="single-sidebar speaker-info">
+                                <div class="img-box">
+                                    <img th:src="@{assets/img/single/2.jpg}" alt="">
+                                </div>
+                                <div class="cont-box">
+                                    <h4><a href="#">Patricia Dominy</a></h4>
+                                    <h6 class="margin-top-10">Digital Marketer</h6>
+                                    <div class="social-icons text-center text-md-right margin-top-10">
+                                        <a href="#"> <span class="active"> <i class="fab fa-linkedin-in"></i></span></a>
+                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
+                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
+                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
+                                            </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="brand-area padding-top-110 padding-bottom-90">
+        <div class="container">
+            <div class="row justify-content-center margin-bottom-20">
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="common-title text-center">
+                        <h5>sponsor</h5>
+                        <h2>meet our <span>sponsor</span></h2>
+                        <p class="margin-top-20">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/1.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".4s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/2.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".6s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/3.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".8s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/4.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay="1s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/5.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.2s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/6.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.4s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/7.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.6s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/8.png}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.8s">
+                    <div class="single-brand">
+                        <img th:src="@{assets/img/single/9.png}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragment/subscribe :: subscribe"></div>
+    <footer th:replace="fragment/footer :: footer"></footer>
+
+
+    <div class="scrollup" style="display: none;"><i class="fas fa-level-up"></i></div>
+
+    <script th:src="@{assets/themes/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{assets/themes/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/themes/slick.min.js}"></script>
+    <script th:src="@{assets/themes/counterup.min.js}"></script>
+    <script th:src="@{assets/themes/jquery.meanmenu.min.js}"></script>
+    <script th:src="@{assets/themes/jquery.magnific-popup.min.js}"></script>
+    <script th:src="@{assets/themes/waypoints.min.js}"></script>
+    <script th:src="@{assets/themes/easing.min.js}"></script>
+    <script th:src="@{assets/themes/isotope.pkgd.min.js}"></script>
+    <script th:src="@{assets/themes/countdown.js}"></script>
+    <script th:src="@{assets/themes/wow.min.js}"></script>
+    <script th:src="@{assets/themes/main.js}"></script>
+
+</body>
+
+</html>

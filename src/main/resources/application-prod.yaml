@@ -1,0 +1,10 @@
+## Spring
+spring:
+  # Datasource
+  datasource:
+    url: jdbc:postgresql://103.75.186.148:5432/emaf_api_db_prod
+    username: postgres
+    password: passwordPWDRemotePROD
+    driver-class-name: org.postgresql.Driver
+
+

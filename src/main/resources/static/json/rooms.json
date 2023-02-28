@@ -1,0 +1,30 @@
+[
+  {
+    "roomName": "001",
+    "capacity": 32
+  },
+  {
+    "roomName": "004",
+    "capacity": 32
+  },
+  {
+    "roomName": "005",
+    "capacity": 32
+  },
+  {
+    "roomName": "006",
+    "capacity": 32
+  },{
+  "roomName": "007",
+  "capacity": 32
+},{
+  "roomName": "LB1",
+  "capacity": 30
+},{
+  "roomName": "LB2",
+  "capacity": 40
+},{
+  "roomName": "Capstone",
+  "capacity": 100
+}
+]

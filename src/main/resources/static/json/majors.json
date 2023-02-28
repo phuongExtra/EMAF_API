@@ -1,0 +1,70 @@
+[
+  {
+    "id": "SE",
+    "name": "Software Engineering"
+  },
+  {
+    "id": "IA",
+    "name": "Information Assurance"
+  },
+  {
+    "id": "SB",
+    "name": "Software Business"
+  },
+  {
+    "id": "AI",
+    "name": "Artificial Intelligence"
+  },
+  {
+    "id": "IS",
+    "name": "Information System"
+  },
+  {
+    "id": "BA",
+    "name": "Business Administration"
+  },
+  {
+    "id": "GD",
+    "name": "Digital Art & Design"
+  },
+  {
+    "id": "JS",
+    "name": "Japanese Studies"
+  },
+  {
+    "id": "KS",
+    "name": "Korean Studies"
+  },
+  {
+    "id": "ES",
+    "name": "English Studies"
+  },
+  {
+    "id": "IoT",
+    "name": "Internet of Things"
+  },
+  {
+    "id": "HM",
+    "name": "Hotel Management"
+  },
+  {
+    "id": "TM",
+    "name": "Tourism and Travel Management"
+  },
+  {
+    "id": "MKT",
+    "name": "Marketing"
+  },
+  {
+    "id": "FIN",
+    "name": "Finance"
+  },
+  {
+    "id": "IB",
+    "name": "International Business"
+  },
+  {
+    "id": "MC",
+    "name": "Multimedia Communication"
+  }
+]

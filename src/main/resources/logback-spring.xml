@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property resource="application.yaml"/>
+    <property name="commonLog"
+              value="Time:%date{yyyy-MM-dd HH:mm:ss}\t"/>
+
+    <property name="LOG_PATH_STG" value="/tmp/emaf-api/logs/stg" />
+    <property name="LOG_PATH_PROD" value="/tmp/emaf-api/logs/prod" />
+
+    <!-- Local staging logger -->
+    <springProfile name="local | stg">
+        <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH_STG}/emaf-api.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH_STG}/emaf-api.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>5</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>%-7([%level]):%msg %logger %n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+        </appender>
+
+        <!-- framework-console log -->
+        <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%-7([%level]):%msg %logger %n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+        </appender>
+
+        <!-- access log -->
+        <appender name="accessLog_stg" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH_STG}/emaf-api_access.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH_STG}/emaf-api_access.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>5</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${comFormat}\t%msg%n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+        </appender>
+
+        <!-- error log -->
+        <appender name="errorLog_stg" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH_STG}/emaf-api_error.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH_STG}/emaf-api_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>5</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${comFormat}\t%msg%n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>ERROR</level>
+            </filter>
+        </appender>
+
+        <logger name="accessLogger_stg" level="debug" additivity="false">
+            <appender-ref ref="accessLog_stg" />
+            <appender-ref ref="STDOUT" />
+        </logger>
+
+        <logger name="errorLogger_stg" level="debug" additivity="false">
+            <appender-ref ref="errorLog_stg" />
+            <appender-ref ref="STDOUT" />
+        </logger>
+
+        <root>
+            <appender-ref ref="FILE" />
+            <appender-ref ref="STDOUT" />
+        </root>
+    </springProfile>
+
+    <!-- Production logger -->
+    <springProfile name="prod">
+        <!-- framework-file log -->
+        <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH_PROD}/emaf-api.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH_PROD}/emaf-api.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>5</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>%-7([%level]):%msg %logger %n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+        </appender>
+
+        <!-- framework-console log -->
+        <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%-7([%level]):%msg %logger %n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+        </appender>
+
+        <!-- access log -->
+        <appender name="accessLog_prod" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH_PROD}/emaf-api_access.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH_PROD}/emaf-api_access.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>5</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${comFormat}\t%msg%n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+        </appender>
+
+        <!-- error log -->
+        <appender name="errorLog_prod" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH_PROD}/emaf-api_error.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH_PROD}/emaf-api_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>5</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>${comFormat}\t%msg%n</pattern>
+            </encoder>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>ERROR</level>
+            </filter>
+        </appender>
+
+        <logger name="accessLogger_prod" level="debug" additivity="false">
+            <appender-ref ref="accessLog_prod" />
+            <appender-ref ref="STDOUT" />
+        </logger>
+
+        <logger name="errorLogger_prod" level="debug" additivity="false">
+            <appender-ref ref="errorLog_prod" />
+            <appender-ref ref="STDOUT" />
+        </logger>
+
+        <root>
+            <appender-ref ref="FILE" />
+            <appender-ref ref="STDOUT" />
+        </root>
+    </springProfile>
+
+</configuration>

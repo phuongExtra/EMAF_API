@@ -1,0 +1,46 @@
+[
+  {
+    "equipmentName": "Loa Monitor",
+    "quantity": "2"
+  },
+  {
+    "equipmentName": "Loa Sub",
+    "quantity": "4"
+  },
+  {
+    "equipmentName": "Dây nhạc cụ",
+    "quantity": "5"
+  },
+  {
+    "equipmentName": "Dây tín hiệu",
+    "quantity": "10"
+  },
+  {
+    "equipmentName": "Dây nguồn",
+    "quantity": "6"
+  },
+  {
+    "equipmentName": "Mixer 16 line",
+    "quantity": "1"
+  },
+  {
+    "equipmentName": "Mixer 24 line",
+    "quantity": "1"
+  },
+  {
+    "equipmentName": "Micro",
+    "quantity": "4"
+  },
+  {
+    "equipmentName": "Micro",
+    "quantity": "4"
+  },
+  {
+    "equipmentName": "Loa kéo",
+    "quantity": "1"
+  },
+  {
+    "equipmentName": "TV",
+    "quantity": "2"
+  }
+]
